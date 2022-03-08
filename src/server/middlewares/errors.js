@@ -1,5 +1,5 @@
 const chalk = require("chalk");
-const debug = require("debug")("kinds:server:middlewares:errors");
+const debug = require("debug")("ultrawarriors: server: middlewares: errors");
 
 const notFoundError = (req, res) => {
   res.status(404).json({ error: true, message: "Endpoint not found" });
@@ -9,7 +9,7 @@ const notFoundError = (req, res) => {
 const generalError = (err, req, res, next) => {
   debug(chalk.red(`Error: ${err.message}`));
   const errorCode = err.code ?? 500;
-  const errorMessage = err.code ? err.message : "General pete";
+  const errorMessage = err.code ? err.message : "General error has ocurred";
   res.status(errorCode).json({ error: true, message: errorMessage });
 };
 
