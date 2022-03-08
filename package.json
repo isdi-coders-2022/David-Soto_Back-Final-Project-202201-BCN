@@ -7,7 +7,8 @@
     "test": "jest --passWithNoTests",
     "prepare": "husky install",
     "start": "node src",
-    "dev": "nodemon src -q"
+    "dev": "nodemon src -q",
+    "coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -28,5 +29,12 @@
     "jest": "^27.5.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.js",
+      "!src/index.js"
+    ]
   }
 }
