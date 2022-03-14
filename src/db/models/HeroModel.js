@@ -29,7 +29,7 @@ const HeroModel = new Schema({
   biography: {
     fullName: { type: String, default: "unknown" },
     alterEgos: { type: String, default: "unknown" },
-    aliases: { type: String, default: "unknown" },
+    aliases: [{ type: String, default: "unknown" }],
     placeOfBirth: { type: String, default: "unknown" },
     firstAppearance: { type: String, default: "unknown" },
     publisher: { type: String, default: "unknown" },
