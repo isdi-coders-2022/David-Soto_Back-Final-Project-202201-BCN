@@ -40,7 +40,7 @@ beforeEach(async () => {
     biography: {
       fullName: "Sir Test Von Ing Hero",
       alterEgos: "test",
-      aliases: ["test"],
+      aliases: ["test", "otherTest"],
       placeOfBirth: "jestTesting",
       firstAppearance: "In HeroCard Test",
       publisher: "DavidSoto",
@@ -84,7 +84,7 @@ beforeEach(async () => {
     biography: {
       fullName: "Sir Test Von Ing Hero Junior",
       alterEgos: "test",
-      aliases: ["test"],
+      aliases: ["test", "miniTest"],
       placeOfBirth: "jestTesting",
       firstAppearance: "In HeroCard Test",
       publisher: "DavidSoto",
