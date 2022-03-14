@@ -67,7 +67,7 @@ describe("Given a heroController controller", () => {
       const req = null;
       const next = jest.fn();
 
-      await getAllHeroes(res, req, next);
+      await getAllHeroes(req, res, next);
 
       expect(next).toHaveBeenCalled();
     });
