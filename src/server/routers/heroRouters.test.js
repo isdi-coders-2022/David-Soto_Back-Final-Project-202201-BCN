@@ -4,7 +4,6 @@ const request = require("supertest");
 const connectDB = require("../../db/index");
 const Hero = require("../../db/models/HeroModel");
 const app = require("../index");
-
 require("dotenv").config();
 
 let server;
@@ -119,7 +118,7 @@ afterAll(async () => {
 describe("Given a /hero/listAll/ endpoint", () => {
   describe("When it receives a get method", () => {
     test("Then it should return a 200 status code", async () => {
-      const { body } = await request(app).get("/products/list").expect(200);
+      const { body } = await request(app).get("/hero/listAll").expect(200);
       expect(body.heroes).toHaveLength(2);
     });
   });
