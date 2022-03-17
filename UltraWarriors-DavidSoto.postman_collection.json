@@ -1,111 +1,89 @@
 {
-	"info": {
-		"_postman_id": "8914f2de-909e-4c31-af57-244cde958c74",
-		"name": "UltraWarriors-DavidSoto",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "{{API_URL}}/hero/listAll/",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{api_url}}/hero/listAll/",
-					"host": [
-						"{{api_url}}"
-					],
-					"path": [
-						"hero",
-						"listAll",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "{{API_URL}}/user/login/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"keexs\",\r\n    \"password\": \"mockpass\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{api_url}}/user/login/",
-					"host": [
-						"{{api_url}}"
-					],
-					"path": [
-						"user",
-						"login",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "{{API_URL}}/user/register/",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"keexs\",\r\n    \"password\": \"mockpass\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{api_url}}/user/register/",
-					"host": [
-						"{{api_url}}"
-					],
-					"path": [
-						"user",
-						"register",
-						""
-					]
-				}
-			},
-			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "api_url",
-			"value": "https://ultrawarriors-david-soto.onrender.com",
-			"type": "default"
-		}
-	]
+  "info": {
+    "_postman_id": "8914f2de-909e-4c31-af57-244cde958c74",
+    "name": "UltraWarriors-DavidSoto",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "{{API_URL}}/hero/listAll/",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{api_url}}/hero/listAll/",
+          "host": ["{{api_url}}"],
+          "path": ["hero", "listAll", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{API_URL}}/user/login/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"keexs\",\r\n    \"password\": \"mockpass\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}/user/login/",
+          "host": ["{{api_url}}"],
+          "path": ["user", "login", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "{{API_URL}}/user/register/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"keexs\",\r\n    \"password\": \"mockpass\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{api_url}}/user/register/",
+          "host": ["{{api_url}}"],
+          "path": ["user", "register", ""]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "api_url",
+      "value": "https://ultrawarriors-david-soto.onrender.com",
+      "type": "default"
+    }
+  ]
 }
