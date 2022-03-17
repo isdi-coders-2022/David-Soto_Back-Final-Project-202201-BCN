@@ -11,10 +11,14 @@ const loginController = async (req, res, next) => {
       if (registeredUser.password === password) {
         res.status(200).json({ registeredUser });
       } else {
-        res.status(403).json({ error: "wrong password" });
+        const error = new Error("Wrong Username or Password");
+        error.code = 400;
+        next(error);
       }
     } else {
-      res.status(403).json({ error: "user not fount" });
+      const error = new Error("Wrong Username or Password");
+      error.code = 400;
+      next(error);
     }
   } catch (error) {
     debug(chalk.red("Error"));
@@ -32,7 +36,9 @@ const registerController = async (req, res, next) => {
       await User.create(newUser);
       res.status(200).json({ state: "user created" });
     } else {
-      res.status(403).json({ error: "username already taken" });
+      const error = new Error("Username already taken");
+      error.code = 400;
+      next(error);
     }
   } catch (error) {
     debug(chalk.red("Error"));
