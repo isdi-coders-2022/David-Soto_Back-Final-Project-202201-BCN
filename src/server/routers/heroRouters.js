@@ -1,5 +1,5 @@
 const express = require("express");
-const getAllHeroes = require("../controllers/heroController");
+const { getAllHeroes } = require("../controllers/heroController");
 
 const router = express();
 
