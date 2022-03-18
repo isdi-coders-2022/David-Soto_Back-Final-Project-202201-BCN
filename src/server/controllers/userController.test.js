@@ -6,21 +6,19 @@ describe("Given a userController controller", () => {
     test("Then it should find if the user exists", async () => {
       const req = {
         body: {
-          user: {
-            username: "TestGuy",
-            password: "testPassword",
-          },
+          username: "TestGuy",
+          password: "testPassword",
         },
       };
 
       const res = {
-        json: jest.fn(),
-        status: jest.fn().mockReturnThis(),
+        json: jest.fn().mockReturnThis(req.body),
+        status: jest.fn(),
       };
 
       const next = jest.fn();
 
-      User.findOne = jest.fn().mockResolvedValue(req.body.user);
+      User.findOne = jest.fn().mockResolvedValue(req.body);
 
       await loginController(req, res, next);
 
