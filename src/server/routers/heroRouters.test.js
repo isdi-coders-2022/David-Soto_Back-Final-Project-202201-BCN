@@ -118,7 +118,7 @@ afterAll(async () => {
 describe("Given a /hero/listAll/ endpoint", () => {
   describe("When it receives a get method without token", () => {
     test("Then it should return a 200 status code", async () => {
-      const { body } = await request(app).get("/hero/listAll").expect(401);
+      await request(app).get("/hero/listAll").expect(401);
     });
   });
 });
