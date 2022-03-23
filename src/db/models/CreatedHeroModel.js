@@ -2,6 +2,8 @@ const { model, Schema } = require("mongoose");
 
 const createdHeroModel = new Schema({
   name: { type: String, required: true },
+  alias: { type: String, required: true },
+  creator: { type: String, required: true },
   powerstats: {
     intelligence: { type: Number, required: true },
     strength: { type: Number, required: true },
@@ -9,9 +11,6 @@ const createdHeroModel = new Schema({
     durability: { type: Number, required: true },
     power: { type: Number, required: true },
     combat: { type: Number, required: true },
-  },
-  biography: {
-    fullName: { type: String, default: "unknown" },
   },
 });
 
