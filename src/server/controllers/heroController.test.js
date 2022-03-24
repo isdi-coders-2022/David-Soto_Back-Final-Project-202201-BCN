@@ -1,5 +1,4 @@
 const Hero = require("../../db/models/HeroModel");
-const User = require("../../db/models/UserModel");
 const { getAllHeroes } = require("./heroController");
 
 describe("Given a heroController getAllHeroes controller", () => {

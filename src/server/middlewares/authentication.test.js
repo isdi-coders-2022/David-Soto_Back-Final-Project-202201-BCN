@@ -1,4 +1,3 @@
-const { JsonWebTokenError } = require("jsonwebtoken");
 const auth = require("./authentication");
 
 require("dotenv").config();
