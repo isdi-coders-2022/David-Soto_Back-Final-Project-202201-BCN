@@ -1,7 +1,7 @@
 const Hero = require("../../db/models/HeroModel");
 const { getAllHeroes } = require("./heroController");
 
-describe("Given a heroController controller", () => {
+describe("Given a heroController getAllHeroes controller", () => {
   describe("When it receives a response", () => {
     test("Then it should send a list of heroes", async () => {
       const hero = {
